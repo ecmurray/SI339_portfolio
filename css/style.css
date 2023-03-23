@@ -1,4 +1,7 @@
-* {
+.placeholder {
+    color: red;
+}
+/* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -50,4 +53,4 @@ h1 {
 p {
     margin-bottom: 1rem;
     color: #666;
-}
+} */
