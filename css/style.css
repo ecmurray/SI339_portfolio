@@ -3,17 +3,18 @@
 }
 
 .style-inspo-imgs {
-    display: inline-grid;
-    grid-template-areas: 1 / 1 / span 2 / span 10;
+    display: grid;
+    grid-template: 1 / 1 / span 3 / span 10;
     /* grid-area: 1 / 1 / span 2 / span 10; */
     justify-items: center;
+    align-items: center;
     row-gap: 3px;
-    overflow: auto;
+    overflow:auto;
 }
 
-
 img {
-    max-width: 200px;
+    /* justify-content: center; */
+    max-width: 133px;
     height: auto;
     /* display: block; remove extra space below image */
 }
