@@ -4,14 +4,16 @@
 
 .style-inspo-imgs {
     display: inline-grid;
-    grid-area: 1 / 1 / span 2 / span 10;
+    grid-template-areas: 1 / 1 / span 2 / span 10;
+    /* grid-area: 1 / 1 / span 2 / span 10; */
     justify-items: center;
     row-gap: 3px;
     overflow: auto;
 }
 
-div img {
-    max-width: 100%;
+
+img {
+    max-width: 200px;
     height: auto;
     /* display: block; remove extra space below image */
 }
