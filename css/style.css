@@ -16,6 +16,8 @@ img {
     /* justify-content: center; */
     max-width: 133px;
     height: auto;
+    justify-self: center;
+    align-self: center;
     /* display: block; remove extra space below image */
 }
 /* .box{
@@ -34,6 +36,18 @@ div img:nth-child(1) {
 div img:nth-child(2) {
     grid-area: 1 / 2 / 3 / 3;
 }
+.packaging-inspo-imgs {
+    display: flex;
+    flex-basis: 100%;
+}
+
+.packaging-inspo-imgs img {
+    max-width: 100%;
+    height: auto;
+} 
+/* The grid layout must change in each of your three screen sizes using min-width media queries.   */
+/* The flex layout must change in each of your three screen sizes using min-width media queries.   */
+
 /* * {
     margin: 0;
     padding: 0;
