@@ -2,36 +2,34 @@ body {
     background-color: antiquewhite;
 }
 
-.style-inspo-imgs {
-    display: grid;
+.branding-container{
+    /* display: grid;
     grid-template: 1 / 1 / span 4 / span 10;
-    /* grid-area: 1 / 1 / span 2 / span 10; */
     justify-content: center;
     align-items: center;
     row-gap: 3px;
-    overflow:auto;
+    overflow:auto; */
+    column-count: 3;
+    column-gap: 15px;
+}
+.branding-item {
+    display: inline-block;
+    width: 100%;
+}
+.branding-item img {
+    display:block;
+    width: 100%;
 }
 
 img {
-    /* justify-content: center; */
     max-width: 200px;
     height: auto;
     justify-self: center;
     align-self: center;
-    /* display: block; remove extra space below image */
 }
-/* .box{
-    width: 250px;        
-    border: 5px solid black;
-}    
-.box.large{
-    height: 300px;
-}
-.box.small{
-    height: 100px;
-} */
 
-div img:nth-child(1) {
+
+/* div img:nth-child(1) {
     grid-area: 1 / 1 / span 1 / span 1;
 }
 div img:nth-child(2) {
@@ -85,6 +83,6 @@ div img:nth-child(2) {
     .package {
         max-width: 25%;
     }
-}
+} */
 /* The grid layout must change in each of your three screen sizes using min-width media queries.   */
 /* The flex layout must change in each of your three screen sizes using min-width media queries.   */
