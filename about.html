@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Main Page</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/pin_styles.css">
+    <link rel="stylesheet" href="./styles/modal_styles.css">
+    <link rel="stylesheet" href="./styles/final_board.css">
 </head>
 <body>
     <a class = "skip" href="#skip">Skip to Main Content</a>
@@ -19,38 +22,74 @@
         </nav>
     </header>
 
-    <main>
-        <h1 id="" class="">About me</h2>
-        <div id="">
-            <p id="" class="">
-                Hi, I’m Esther! I’m a computer science student at the University of Michigan. <br/>
-                <br/>Gaining a background in frontend development and brand design as a student at Michigan, I love finding new opportunities to develop my skills in different applications. 
-            </p>
+    <div class="navigation_bar">
+        <div class="pint_mock_icon_container add_pin">
+            <img src="./images/add.png" alt="add_pin" class="pint_mock_icon">
         </div>
-        <h2>My branding and packaging inspo</h2>
-        <div class = "style-inspo-imgs">
-            
-            <img src = "imgs/packaging_img_5.jpeg"/>
-            <img src = "imgs/packaging_img_6.jpeg"/>
-            <!-- <img src = "/imgs/packaging_img_7.jpeg"> -->
-            <img src = "imgs/packaging_img_8.jpeg"/>
-            <img src = "imgs/packaging_img_4.jpeg"/>
-            <img src = "imgs/packaging_img_9.jpeg"/>
-   
+    </div>
 
-            <img src = "imgs/packaging_img_12.jpeg"/>
-            <img src = "imgs/packaging_img_1.jpeg"/>
-            <img src = "imgs/packaging_img_3.jpeg"/>
+    <div class="pin_container"></div>
+
+    <div class="add_pin_modal">
+        <div class="add_pin_container">
+            <div class="side" id="left_side">
+                <div class="section1">
+                    <div class="pint_mock_icon_container">
+                        <img src="./images/ellipse.png" alt="edit" class="pint_mock_icon">
+                    </div>
+                </div>
+
+                <div class="section2">
+                    <label for="upload_img" id="upload_img_label">
+                        <div class="upload_img_container">
+                            <div id="dotted_border">
+                                <div class="pint_mock_icon_container">
+                                    <img src="./images/up-arrow.png" alt="upload_img" class="pint_mock_icon">
+                                </div>
+                                <div>Click to upload</div>
+                                <div>Recommendation: Use high-quality .jpg files less than 20MB</div>
+                            </div>
+                        </div>
+                        <input type="file" name="upload_img" id="upload_img">
+                    </label>
+
+                    <div class="modals_pin">
+                        <div class="pin_image">
+                            <!-- <img src="" alt="pin_image"> -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section3">
+                    <div class="save_from_site">Save From Site</div>
+                </div>
+            </div>
+
+            <div class="side" id="right_side">
+                <div class="section1">
+                    <div class="select_size">
+                        <select name="pin_size" id="pin_size">
+                            <option value="" disabled selected>Select</option>
+                            <option value="small">small</option>
+                            <option value="medium">medium</option>
+                            <option value="large">large</option>
+                        </select>
+                        <div class="save_pin">Save</div>
+                    </div>
+                </div>
+
+                <div class="section2">
+                    <input placeholder="Add your title" type="text" class="new_pin_input" id="pin_title">
+                    <input placeholder="Tell everyone what your Pin is about" type="text" class="new_pin_input" id="pin_description">
+                    <input placeholder="Add a destination link" type="text" class="new_pin_input" id="pin_destination">
+                </div>
+            </div>
         </div>
-        <div class = "container-inspo">
-            <img class = "package" src = "imgs/packaging_img_11.jpeg"/>
-            <img class = "package" src = "imgs/packaging_img_11.jpeg"/>
-            <img class = "package" src = "imgs/packaging_img_11.jpeg"/>
-            <img class = "package" src = "imgs/packaging_img_11.jpeg"/>
-        </div>
-        <div class = "packaging-inspo-imgs">
-            <h3 id = "skip" class = "placeholder">Placeholder for skip to content until I have more content on page!!!!!!!!!</h3>
-        </div>
-    </main>
+    </div>
+
+    <script src="./scripts/final_board.js"></script>
+
+    
 </body>
+
 </html>
