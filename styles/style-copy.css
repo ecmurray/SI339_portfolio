@@ -1,0 +1,17 @@
+.branding-container {
+    column-count: 3;
+    column-gap: 15px;
+  }
+  
+  .branding-item {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .branding-item img {
+    display: block;
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+  }
