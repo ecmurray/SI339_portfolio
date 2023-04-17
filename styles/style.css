@@ -1,12 +1,12 @@
-body {
+/* body {
     background-color: antiquewhite;
-}
+} */
 
 .branding-container{
     column-count: 3;
     column-gap: 15px;
 }
-.branding-item {
+#branding-item {
     display: inline-block;
     width: 100%;
     
