@@ -4,7 +4,7 @@
 
 
 .nav-button {
-    background-color: #EA4C89;
+
     border-radius: 8px;
     border-style: none;
     box-sizing: border-box;
@@ -30,10 +30,10 @@
     touch-action: manipulation;
 }
     
-.nav-button:hover,
+/* .nav-button:hover,
 .nav-button:focus {
     background-color: #F082AC;
-}
+} */
 
 .branding-container{
     column-count: 3;
@@ -42,8 +42,8 @@
 #branding-item {
     display: inline-block;
     width: 100%;
-    
 }
+
 .branding-item img {
     display:block;
     width: 100%;

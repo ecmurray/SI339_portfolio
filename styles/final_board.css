@@ -56,6 +56,8 @@
     position: relative;
     border-radius: var(--card_border_radius);
     overflow: hidden;
+    /* display: flex;
+    justify-content: center; */
 }
 
 /* .card {

@@ -1,6 +1,7 @@
 .card {
     width: 236px;
     height: 472px;
+    /* width: 100%; */
     border-radius: 16px;
     position: relative;
     
