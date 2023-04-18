@@ -29,11 +29,31 @@
     -webkit-user-select: none;
     touch-action: manipulation;
 }
+
+.nav-button a {
+    font-weight: normal; /* Reset the font weight */
+}
+
+
+/* 
+.nav-button a:hover,
+.nav-button a:focus {
+font-weight: bold; 
+} */
+a:visited,a:hover, a:active {
+    font-weight: bold;
+}
+
     
 /* .nav-button:hover,
 .nav-button:focus {
     background-color: #F082AC;
 } */
+.skip {
+    position: absolute;
+    top: -100px;
+    left: 0;
+}
 
 .branding-container{
     column-count: 3;
