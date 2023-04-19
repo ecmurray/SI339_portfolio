@@ -15,3 +15,108 @@
     border-radius: 16px;
     overflow: hidden;
   }
+
+
+
+  /* Hamburger menu on mobile */
+@media (max-width: 767px) {
+  header {
+    background-color: #333;
+    color: #fff;
+  }
+  
+  nav {
+    display: none;
+  }
+  
+  .toggle-menu {
+    display: block;
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .toggle-menu:hover {
+    background-color: #ccc;
+  }
+  
+  /* .menu-open nav {
+    display: block;
+  } */
+}
+
+/* Prioritize key actions on desktop */
+@media (min-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  nav a {
+    margin-left: 20px;
+  }
+  
+  .cta-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .cta-button:hover {
+    background-color: #444;
+  }
+}
+
+/* Sticky header on tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  nav a {
+    margin-left: 20px;
+  }
+  
+  .cta-button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .cta-button:hover {
+    background-color: #444;
+  }
+}

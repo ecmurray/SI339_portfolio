@@ -3,6 +3,7 @@
 } */
 
 
+  
 .nav-button {
 
     border-radius: 8px;
@@ -120,6 +121,33 @@ font-weight: bold;
     }
     .package {
         max-width: 25%;
+    }
+}
+
+
+/* Sticky header on tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      z-index: 1;
+      background-color: #fff;
+      color: #333;
+      padding: 10px;
+      display: flex;
+      /* justify-content: space-between; */
+      /* align-items: center; */
+    }
+    
+    nav {
+      display: flex;
+      /* justify-content: flex-end; */
+      align-items: center;
+    }
+    
+    nav a {
+      margin-left: 20px;
     }
 }
 

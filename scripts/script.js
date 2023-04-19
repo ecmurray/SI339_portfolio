@@ -1,17 +1,24 @@
-document.querySelector('.save_pin').addEventListener('click', () => {
-  const users_data = {
-      author: 'Jack',
-      board: 'default',
-      title: document.querySelector('#pin_title').value,
-      description: document.querySelector('#pin_description').value,
-      destination: document.querySelector('#pin_destination').value,
-      img_blob: pin_image_blob,
-      pin_size: document.querySelector('#pin_size').value
-  }
+const toggleButton = document.querySelector('.toggle-menu');
+const navigation = document.querySelector('nav');
 
-  create_pin(users_data);
-  reset_modal();
+toggleButton.addEventListener('click', () => {
+  navigation.classList.toggle('menu-open');
 });
+
+// document.querySelector('.save_pin').addEventListener('click', () => {
+//   const users_data = {
+//       author: 'Jack',
+//       board: 'default',
+//       title: document.querySelector('#pin_title').value,
+//       description: document.querySelector('#pin_description').value,
+//       destination: document.querySelector('#pin_destination').value,
+//       img_blob: pin_image_blob,
+//       pin_size: document.querySelector('#pin_size').value
+//   }
+
+//   create_pin(users_data);
+//   reset_modal();
+// });
 
 
 // Define an array of pin details
