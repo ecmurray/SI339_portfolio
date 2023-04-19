@@ -32,6 +32,8 @@
 
 .nav-button a {
     font-weight: normal; /* Reset the font weight */
+    /* font-variant-alternates: ; */
+    color: black;
 }
 
 
@@ -40,9 +42,9 @@
 .nav-button a:focus {
 font-weight: bold; 
 } */
-a:visited,a:hover, a:active {
+/* a:visited,a:hover, a:active {
     font-weight: bold;
-}
+} */
 
     
 /* .nav-button:hover,
