@@ -120,3 +120,80 @@
     background-color: #444;
   }
 }
+
+
+
+/* HERE */
+
+
+
+
+
+@media screen and (min-width: 700px){
+  .container-inspo {
+      flex-wrap: wrap;
+  }
+}
+
+/* Styles grid on Home for small screens */
+@media only screen and (max-width: 767px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Styles grid on home for medium screens */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Styles grid for large screens */
+@media only screen and (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
+
+@media screen and (min-width:900px){
+
+  /* body {
+      background-color: pink;
+  } */
+  .container-inspo {
+      flex-wrap: nowrap;
+  }
+  .package {
+      max-width: 25%;
+  }
+}
+
+
+/* Sticky header on tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    z-index: 1;
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+  }
+  
+  nav {
+    display: flex;
+    /* justify-content: flex-end; */
+    align-items: center;
+  }
+  
+  nav a {
+    margin-left: 20px;
+  }
+}
