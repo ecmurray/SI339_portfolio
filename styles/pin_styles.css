@@ -56,7 +56,8 @@
     font-weight: 700;
 
     color: white;
-    background-color: red;
+    /* background-color: red; */
+    background-color: #B30000;
     cursor: pointer;
 }
 

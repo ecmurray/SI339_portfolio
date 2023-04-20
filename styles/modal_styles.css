@@ -207,7 +207,8 @@
     font-weight: 700;
 
     color: white;
-    background-color: #e60023;
+    /* background-color: #e60023; */
+    background-color: #B30000;
     cursor: pointer;
 }
 

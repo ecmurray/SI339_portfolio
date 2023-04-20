@@ -6,6 +6,7 @@
     <meta content="Creating connections through meaningful work." name="description"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
+    <link rel="stylesheet" href="./styles/html5reset.css">
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/pin_styles.css">
     <link rel="stylesheet" href="./styles/modal_styles.css">
@@ -13,26 +14,30 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <div>
-        <a>
-            <div class="">E –– M</div>
-        </a>
-    </div>
     <header>
-        <a class = "skip" href="#skip">Skip to Main Content</a>
+        <a class = "skip" href="#skip" tabindex="0">Skip to Main Content</a>
+        <div>
+            <a>
+                <div class="">E –– M</div>
+            </a>
+        </div>
+        
         <nav>
-            <ul>
-                <button class="nav-button" role="button"><a href="index.html">Home</a></button>
-                <button class="nav-button" role="button"><a style="font-weight: bold" href="work.html">My branding Inspiration</a></button>
-                <button class="nav-button" role="button"><a href="make.html">Make your own photo board</a></button>
-                <!-- <button class="nav-button" role="button"><a href="contact.html">Contact</a></button> -->
-            </ul>
+            <!-- <ul> -->
+                <!-- <button class="nav-button" role="button"><a style="font-weight: bold" href="index.html">Home</a></button> -->
+                <button class="nav-button" role="button" onclick="location.href='index.html';">Home</button>
+                <!-- <button class="nav-button" role="button"><a href="work.html">My branding Inspiration</a></button> -->
+                <button class="nav-button" role="button" onclick="location.href='work.html';" style="font-weight: bold">My branding Inspiration</button>
+                <!-- <button class="nav-button" role="button"><a href="make.html">Make your own photo board</a></button> -->
+                <button class="nav-button" role="button" onclick="location.href='make.html';">Make your own photo board</button>
+            <!-- </ul> -->
         </nav>
     </header>
 
     <main>
+
         <div class = "packaging-inspo-imgs">
-            <h3 id = "skip" class = "placeholder">My Branding Mood Board</h3>
+            <h1 id = "skip" class = "placeholder">My Branding Mood Board</h1>
         </div>
 
       <div class="branding-container">
@@ -41,6 +46,8 @@
           <div class="pin_modal">
                 <div class="modal_head">
                   <div class="save_card">Save</div>
+                  <!-- <div class="save_card" style="color: #333333; background-color: #ff0000;">
+                    Save</div> -->
               </div>
               <div class="modal_foot">
                   <div class="destination">
@@ -57,8 +64,9 @@
                   </div>
               </div>
           </div>
-          <div class="pin_image" id="branding-item"><img src="imgs/packaging_img_5.jpeg" alt="Pin Image" class="pin_max_height"></div>
+          <div class="pin_image" id="branding-item5"><img src="imgs/packaging_img_5.jpeg" alt="Pin Image" class="pin_max_height"></div>
         </div>
+        
       <!-- Image 6  -->
         <div class="card card_medium" style="opacity: 1;"><div class="pin_title">zxc</div>
         <div class="pin_modal" >
@@ -80,7 +88,7 @@
                 </div>
             </div>
         </div>
-        <div class="pin_image" id="branding-item"><img src="imgs/packaging_img_6.jpeg" alt="Pin Image" class="pin_max_height"></div>
+        <div class="pin_image" id="branding-item6"><img src="imgs/packaging_img_6.jpeg" alt="Pin Image" class="pin_max_height"></div>
       </div>
 
        <!-- Image 8  -->
@@ -104,7 +112,7 @@
               </div>
           </div>
       </div>
-      <div class="pin_image" id="branding-item"><img src="imgs/packaging_img_8.jpeg" alt="Pin Image" class="pin_max_height"></div>
+      <div class="pin_image" id="branding-item8"><img src="imgs/packaging_img_8.jpeg" alt="Pin Image" class="pin_max_height"></div>
     </div>
 
       <!-- Image 4  -->
@@ -128,7 +136,7 @@
               </div>
           </div>
       </div>
-      <div class="pin_image" id="branding-item"><img src="imgs/packaging_img_4.jpeg" alt="Pin Image" class="pin_max_height"></div>
+      <div class="pin_image" id="branding-item4"><img src="imgs/packaging_img_4.jpeg" alt="Pin Image" class="pin_max_height"></div>
     </div>
 
       <!-- Image 9  -->
@@ -152,7 +160,7 @@
               </div>
           </div>
       </div>
-      <div class="pin_image" id="branding-item"><img src="imgs/packaging_img_9.jpeg" alt="Pin Image" class="pin_max_height"></div>
+      <div class="pin_image" id="branding-item9"><img src="imgs/packaging_img_9.jpeg" alt="Pin Image" class="pin_max_height"></div>
     </div>
 
       <!-- Image 12 -->
@@ -176,7 +184,7 @@
               </div>
           </div>
       </div>
-      <div class="pin_image" id="branding-item"><img src="imgs/packaging_img_12.jpeg" alt="Pin Image" class="pin_max_height"></div>
+      <div class="pin_image" id="branding-item12"><img src="imgs/packaging_img_12.jpeg" alt="Pin Image" class="pin_max_height"></div>
     </div>
 
       <!-- Image 1  -->
@@ -200,7 +208,7 @@
               </div>
           </div>
       </div>
-      <div class="pin_image" id="branding-item"><img src="imgs/packaging_img_1.jpeg" alt="Pin Image" class="pin_max_height"></div>
+      <div class="pin_image" id="branding-item1"><img src="imgs/packaging_img_1.jpeg" alt="Pin Image" class="pin_max_height"></div>
     </div>
       
       <!-- Image 3  -->
@@ -224,7 +232,7 @@
               </div>
           </div>
       </div>
-      <div class="pin_image" id="branding-item"><img src="imgs/packaging_img_3.jpeg" alt="Pin Image" class="pin_max_height"></div>
+      <div class="pin_image" id="branding-item3"><img src="imgs/packaging_img_3.jpeg" alt="Pin Image" class="pin_max_height"></div>
     </div>
     </div>
     </main>

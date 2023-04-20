@@ -5,7 +5,7 @@
     <title>Esther Murray Design</title>
     <meta content="Creating connections through meaningful work." name="description"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+    <link rel="stylesheet" href="./styles/html5reset.css">
     <link rel="stylesheet" href="./styles/normalize.css">
     <link rel="stylesheet" href="./styles/pin_styles.css">
     <link rel="stylesheet" href="./styles/modal_styles.css">
@@ -13,25 +13,32 @@
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body>
-    <div>
-        <a>
-            <div class="">E –– M</div>
-        </a>
-    </div>
+
     <header>
-        <a class = "skip" href="#skip">Skip to Main Content</a>
+        <a class = "skip" href="#skip" tabindex="0">Skip to Main Content</a>
+        <div>
+            <a>
+                <div class="">E –– M</div>
+            </a>
+        </div>
+        <br>
         <nav>
-            <ul>
-                <button class="nav-button" role="button"><a href="index.html">Home</a></button>
-                <button class="nav-button" role="button"><a href="work.html">My branding Inspiration</a></button>
-                <button class="nav-button" role="button"><a style="font-weight: bold" href="make.html">Make your own photo board</a></button>
-                <!-- <button class="nav-button" role="button"><a href="contact.html">Contact</a></button> -->
-            </ul>
+            <!-- <ul> -->
+                <!-- <button class="nav-button" role="button"><a style="font-weight: bold" href="index.html">Home</a></button> -->
+                <button class="nav-button" role="button" onclick="location.href='index.html';">Home</button>
+                <!-- <button class="nav-button" role="button"><a href="work.html">My branding Inspiration</a></button> -->
+                <button class="nav-button" role="button" onclick="location.href='work.html';">My branding Inspiration</button>
+                <!-- <button class="nav-button" role="button"><a href="make.html">Make your own photo board</a></button> -->
+                <button class="nav-button" role="button" onclick="location.href='make.html';" style="font-weight: bold">Make your own photo board</button>
+            <!-- </ul> -->
         </nav>
     </header>
 
-    <div>Here you can click the plus sign, upload a photo to add a photo to the board with a title, description, and destination!</div>
-
+    <main>
+        <div class = "packaging-inspo-imgs">
+            <h1 id = "skip" class = "placeholder">Here you can click the plus sign, upload a photo to add a photo to the board with a title, description, and destination!</h1>
+        </div>
+   
     <div class="navigation_bar">
         <div class="pint_mock_icon_container add_pin">
             <img src="./imgs/add.png" alt="add_pin" class="pint_mock_icon">
@@ -74,31 +81,63 @@
                     <div class="save_from_site">Save From Site</div>
                 </div>
             </div>
-
             <div class="side" id="right_side">
                 <div class="section1">
                     <div class="select_size">
+                        <label for="pin_size" style="color: white;">Pin Size Preference:</label>
                         <select name="pin_size" id="pin_size">
-                            <option value="" disabled selected>Select</option>
+                            <option value="select option" disabled selected>Select</option>
+                            <option value="small">Small</option>
+                            <option value="medium">Medium</option>
+                            <option value="large">Large</option>
+                        </select>
+                        <div class="save_pin">Save</div>
+                    </div>
+                </div>
+            
+                <div class="section2">
+                    <label for="pin_title" style="color: white;">Add your title:</label>
+                    <input name="title" placeholder="Add your title" type="text" class="new_pin_input" id="pin_title">
+                    
+                    <label for="pin_description" style="color: white;">Add your Description:</label>
+                    <input name="description" placeholder="Tell everyone what your Pin is about" type="text" class="new_pin_input" id="pin_description">
+                    
+                    <label for="pin_destination" style="color: white;">Add a destination link:</label>
+                    <input name="destination_link" placeholder="Add a destination link" type="text" class="new_pin_input" id="pin_destination">
+                </div>
+            </div>
+            <!-- <div class="side" id="right_side">
+                <div class="section1">
+                    <div class="select_size">
+                  
+                        <label for="pin_size"></label>
+                        <select name="pin_size" id="pin_size">
+
+                            <option value="select option" disabled selected>Select</option>
                             <option value="small">small</option>
                             <option value="medium">medium</option>
                             <option value="large">large</option>
                         </select>
+                   
                         <div class="save_pin">Save</div>
                     </div>
                 </div>
 
                 <div class="section2">
-                    <input placeholder="Add your title" type="text" class="new_pin_input" id="pin_title">
-                    <input placeholder="Tell everyone what your Pin is about" type="text" class="new_pin_input" id="pin_description">
-                    <input placeholder="Add a destination link" type="text" class="new_pin_input" id="pin_destination">
+                    <label for="title"></label>
+                    <input name="title" placeholder="Add your title" type="text" class="new_pin_input" id="pin_title">
+                    
+                    <label for="description"></label>
+                    <input name="description" placeholder="Tell everyone what your Pin is about" type="text" class="new_pin_input" id="pin_description">
+                    <label for="destination_link"></label>
+                    <input name="destination_link" placeholder="Add a destination link" type="text" class="new_pin_input" id="pin_destination">
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 
     <script src="./scripts/final_board.js"></script>
-
+</main>
     <footer>
         <div class="text-box">
             <h2>Want to work together? Send me an email!</h2>

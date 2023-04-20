@@ -10,24 +10,30 @@
     <link rel="stylesheet" href="./styles/pin_styles.css">
     <link rel="stylesheet" href="./styles/modal_styles.css">
     <link rel="stylesheet" href="./styles/final_board.css"> -->
+    <link rel="stylesheet" href="./styles/html5reset.css">
     <link rel="stylesheet" href="./styles/style.css">
 
 </head>
 <body>
-    <div>
-        <a>
-            <div class="">E –– M</div>
-        </a>
-    </div>
+
     <header>
-        <a class="skip" href="#skip" tabindex="1">Skip to Main Content</a>
+        <a class="skip" href="#skip" tabindex="0">Skip to Main Content</a>
+        <div>
+            <a>
+                <div class="">E –– M</div>
+            </a>
+        </div>
+        <br>
         <!-- <button class="toggle-menu">Menu</button> -->
         <nav>
-            <ul>
-                <button class="nav-button" role="button"><a style="font-weight: bold" href="index.html">Home</a></button>
-                <button class="nav-button" role="button"><a href="work.html">My branding Inspiration</a></button>
-                <button class="nav-button" role="button"><a href="make.html">Make your own photo board</a></button>
-            </ul>
+            <!-- <ul> -->
+                <!-- <button class="nav-button" role="button"><a style="font-weight: bold" href="index.html">Home</a></button> -->
+                <button class="nav-button" role="button" onclick="location.href='index.html';" style="font-weight: bold">Home</button>
+                <!-- <button class="nav-button" role="button"><a href="work.html">My branding Inspiration</a></button> -->
+                <button class="nav-button" role="button" onclick="location.href='work.html';">My branding Inspiration</button>
+                <!-- <button class="nav-button" role="button"><a href="make.html">Make your own photo board</a></button> -->
+                <button class="nav-button" role="button" onclick="location.href='make.html';">Make your own photo board</button>
+            <!-- </ul> -->
         </nav>
         <!-- <button class="cta-button">
             <div class="text-box">
@@ -39,6 +45,7 @@
     </header>
 
     <main>
+        <h1 id = "skip" class = "placeholder">Some Interior Inspo</h1>
 
 
     <!-- <div class="text-box">
@@ -46,7 +53,7 @@
         <div class="spacer _64"></div>
         <a href="mailto:ecmurray@umich.edu?subject=Hey%20there!" class="heading medium">→ ecmurray@umich.edu</a>
     </div> -->
-    <div>Some Interior Inspo</div>
+    
     <div class="grid">
         <img src="./imgs/1.jpeg" alt="aesthetic bathroom, soft lighting and green tiles" class="1">
         <img src="./imgs/2.jpeg" alt="Coup de Coeur _ Les Maisons Sculptures de Jacques Couelle" class="2">
@@ -68,12 +75,35 @@
     </div>
 
     <div class = "container-inspo">
-        <img class = "package" src = "imgs/packaging_img_11.jpeg"/>
-        <img class = "package" src = "imgs/packaging_img_11.jpeg"/>
-        <img class = "package" src = "imgs/packaging_img_11.jpeg"/>
-        <img class = "package" src = "imgs/packaging_img_11.jpeg"/>
+        <img class = "package" src = "imgs/packaging_img_11.jpeg" alt="aesthetic packaging box "/>
+        <img class = "package" src = "imgs/packaging_img_11.jpeg" alt="aesthetic packaging box" />
+        <img class = "package" src = "imgs/packaging_img_11.jpeg" alt="aesthetic packaging box" />
+        <img class = "package" src = "imgs/packaging_img_11.jpeg" alt="aesthetic packaging box" />
     </div>
     
+    <!-- START 
+    <div class="container">
+        <div class="box box-1">
+            <div class="cover"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/945546/3433202-893bc9989a52eba0.png" alt=""></div>
+            <button><div></div></button>
+        </div>
+        <div class="box box-2">
+            <div class="cover"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/945546/3433202-964edcf0f07211b0.png" alt=""></div>
+            <button><div></div></button>
+        </div>
+        <div class="box box-3">
+            <div class="cover"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/945546/3433202-2ebb2b6f93add843.png" alt=""></div>
+            <button><div></div></button>
+        </div>
+        <div class="box box-4">
+            <div class="cover"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/945546/3433202-f79c4cc8de2f84ae.png" alt=""></div>
+            <button><div></div></button>
+        </div>
+
+    </div>
+
+<a href="https://dribbble.com/YancyMin" class="dr-url" target="_blank"><img class="dr" src="https://cdn.dribbble.com/assets/logo-footer-hd-a05db77841b4b27c0bf23ec1378e97c988190dfe7d26e32e1faea7269f9e001b.png" alt=""></a>
+     END -->
     </main>
 
     <footer>
@@ -89,8 +119,6 @@
 
 
 <!-- 
-
-
 <div class="branding-container">
 
     <div class="branding-item">
